@@ -1,0 +1,108 @@
+body {
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-image: url("./assets/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  width: 90vw;
+  height: 80vh;
+  margin: auto;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background: rgba(254, 254, 254, 0.459);
+  box-shadow: 0 8px 32px 0 rgba(93, 95, 216, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+#search {
+  border: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  margin-bottom: none !important;
+  text-align: center;
+  margin: 2% 0;
+}
+#search:focus,
+#search:active {
+  background: transparent;
+}
+
+h2 {
+  font-family: "Zen Tokyo Zoo";
+  font-size: 4rem;
+  color: white;
+}
+.head {
+  display: flex;
+}
+input {
+  background: inherit;
+  border: none;
+  font-size: 1rem;
+}
+#search_button {
+  background-image: url("./assets/loupe.png");
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40%;
+  transform: translate(-50, -50);
+  width: 50px;
+  height: 50px;
+}
+#data-container {
+  display: none;
+}
+h4 {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+.vitals {
+  margin: 5% 3%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.mid {
+  height: fit-content;
+  padding: 2%;
+  transform: translate(-50, -50);
+}
+#icon {
+  width: 100px;
+  height: 100px;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Josefin Sans", sans-serif;
+}
+.heading {
+  margin-top: 3%;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  #search {
+    width: 90%;
+  }
+}
