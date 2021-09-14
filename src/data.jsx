@@ -14,7 +14,6 @@ function Data(props) {
   const pressure = props.data.main.pressure + " Pa";
   const humidity = props.data.main.humidity + "%";
   const feelsLike = "Feels like " + props.data.main.feels_like + " \u2103";
-
   return (
     <div>
       <div className="mid" marginTop="3%">

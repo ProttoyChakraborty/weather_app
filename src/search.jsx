@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Data from "./data";
+import Background from "./background.jsx";
+import Data from "./data.jsx";
 function Search() {
   const dummyData = {
     name: "",
@@ -53,24 +54,27 @@ function Search() {
       });
   };
   return (
-    <div>
-      <form>
-        <input
-          type="text"
-          placeholder="CityName"
-          name="City"
-          id="search"
-          autoComplete="off"
-        />
-        <button
-          id="search_button"
-          title="search"
-          type="submit"
-          onClick={get}
-        ></button>
-      </form>
-      <div id="data-container">
-        <Data data={data} />
+    <div class="wrapper">
+      <Background load={data} />
+      <div className="container">
+        <form>
+          <input
+            type="text"
+            placeholder="CityName"
+            name="City"
+            id="search"
+            autoComplete="off"
+          />
+          <button
+            id="search_button"
+            title="search"
+            type="submit"
+            onClick={get}
+          ></button>
+        </form>
+        <div id="data-container">
+          <Data data={data} />
+        </div>
       </div>
     </div>
   );

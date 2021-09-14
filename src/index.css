@@ -2,18 +2,40 @@ body {
   text-align: center;
   margin: 0;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  background-image: url("./assets/jonatan-pie-3l3RwQdHRHg-unsplash.jpg");
+  background-color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#bck_video {
+  top: 0;
+  left: 0;
+  position: absolute;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.5;
+}
 #root {
   width: 90vw;
-  height: 80vh;
+  height: fit-content;
   margin: auto;
 }
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
 .container {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
   width: 60%;
-  margin: auto;
   text-align: center;
   background: rgba(254, 254, 254, 0.459);
   box-shadow: 0 8px 32px 0 rgba(93, 95, 216, 0);
@@ -98,9 +120,21 @@ p {
 .heading {
   margin-top: 3%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 450px) {
   .container {
     width: 90%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  #search {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 449px) {
+  .container {
+    width: 90%;
+    margin-top: 50%;
+    margin-bottom: 30%;
   }
   #search {
     width: 90%;

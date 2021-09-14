@@ -3,10 +3,6 @@ import Search from "./search";
 import User from "./userInfo";
 
 function App() {
-  return (
-    <div className="container">
-      <Search />
-    </div>
-  );
+  return <Search />;
 }
 export default App;
